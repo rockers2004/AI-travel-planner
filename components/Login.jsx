@@ -9,7 +9,7 @@ export default function Login() {
       <Image source={Img}
         style={{
             width:'100%',
-            height:450
+            height:520
         }}
      />
 
@@ -17,16 +17,25 @@ export default function Login() {
         <Text style={{
             fontSize :30,
             fontFamily:'outfit-bold',
-            textAlign:'center'
+            textAlign:'center',
+            marginTop:10
         }}
         >AI Travel Planner</Text>
         <Text style={{
           fontFamily:'outfit',
           fontSize:17,
           textAlign:'center',
-          color:Colors.GRAY
+          color:Colors.GRAY,
+          marginTop:20
         }}>Discover your next adventure effortessly. Personlaized itineraries at your fingertips. Travel smarter with AI-driven insights</Text>
-     </View>
+        <View style={styles.button}>
+            <Text style={{color:Colors.WHITE, 
+              textAlign:'center',
+              fontFamily:'outfit',
+              fontSize: 17
+              }}>Sign In with Google</Text>
+        </View>
+      </View>
     </View>
   )
 }
@@ -38,6 +47,12 @@ const styles = StyleSheet.create({
         borderTopLeftRadius:20,
         borderTopRightRadius:20,
         height:'100%',
-        padding:15
+        padding:25
+    },
+    button:{
+      padding:15,
+      backgroundColor:Colors.PRIMARY,
+      borderRadius:99,
+      marginTop:'25%'
     }
 })
